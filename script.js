@@ -1,3 +1,5 @@
+import anime from './anime.es.js';
+
 const ctx = document.getElementById("chart");
 
 new Chart(ctx, {
@@ -39,4 +41,12 @@ new Chart(ctx, {
     responsive: true,
     backgroundColor: 'seagreen'
   },
+});
+
+anime({
+  targets: ctx,
+  translateY: 50,
+  perspective: 1000,
+  rotate: 360,
+  duration: 1000,
 });
